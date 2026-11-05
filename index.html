@@ -91,6 +91,8 @@
   .dest .big { font-size: 36px; line-height: 1.2; display: block; }
   .dest b { display: block; font-size: 14px; }
   .dest small { color: var(--muted); font-size: 12px; }
+  .dest.auto { border: 2px dashed var(--c); width: min(274px, 100%); }
+  .soon { display: inline-block; font-size: 11px; font-weight: 700; color: #fff; background: var(--c); border-radius: 999px; padding: 1px 9px; margin-right: 6px; vertical-align: 2px; }
 
   /* 月表示とバーチカル表示の画面 */
   .views { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(14px, 4vw, 48px); max-width: 640px; margin: 0 auto 24px; }
@@ -202,12 +204,14 @@
           <li>Google ドライブに保存して、どの端末からでも復元</li>
           <li>スマホ本体（ローカル）にファイルとして保存も可能</li>
           <li>最後にバックアップした日時もひと目でわかる</li>
+          <li><span class="soon">有料プラン・近日対応</span>アプリを開くたびに<b>自動でバックアップ</b>。毎日・3日ごと・毎週から選べて、うっかり消しても数日前の状態に戻せる</li>
         </ul>
       </div>
       <div class="visual">
         <div class="backup">
           <div class="dest"><span class="big">🗂️</span><b>Google ドライブ</b><small>クラウドに保存</small></div>
           <div class="dest"><span class="big">📱</span><b>ローカル</b><small>端末に保存</small></div>
+          <div class="dest auto"><span class="big">🔄</span><b>自動バックアップ</b><small>有料プラン・近日対応</small></div>
         </div>
       </div>
     </article>
